@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="menu">
+        <IconButton edge="start" aria-label="menu" color="secondary">
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" className={classes.title}>
