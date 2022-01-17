@@ -6,7 +6,6 @@ import Header from '../partials/Header/Header'
 const useStyles = makeStyles(() => ({
     container: {
       padding: '20px 0',
-      background: 'red',
     }
 }))
 
