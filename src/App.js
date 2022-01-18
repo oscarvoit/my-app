@@ -16,7 +16,7 @@ const App = () => {
       <TemplateDefault>
         <Switch>
           <Route path="/customers">
-            <TemplatePage title="Clientes" Component={Customers} />
+            <TemplatePage title="Lista de Clientes" Component={Customers} />
           </Route>
           <Route path="/">
             <TemplatePage title="Home" Component={Home} />

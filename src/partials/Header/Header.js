@@ -61,7 +61,7 @@ const Header = () => {
             <ListItemIcon>
               <PersonAddIcon />
             </ListItemIcon>
-            <ListItemText>Cadastro de Cliente</ListItemText>
+            <ListItemText>Lista de Clientes</ListItemText>
           </ListItem>
         </List>
       </Drawer>
