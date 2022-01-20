@@ -8,7 +8,6 @@ import TemplateDefault from './templates/Default'
 import TemplatePage from './templates/Page'
 import TemplateClean from './templates/Clean'
 
-
 import CustomersEdit from './pages/customers/Edit'
 import CustomersRegister from './pages/customers/Register'
 import CustomersList from './pages/customers/List'
@@ -16,12 +15,16 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 
 const App = () => {
- return (
-   <Router>
+  return (
+
+      <Router>
         <Switch>
+          
           <Route path="/login">
             <TemplateClean title="Acesso Restrito" Component={Login} />
           </Route>
+          
+          
           <TemplateDefault>
             <Route path="/customers/edit/:id">
               <TemplatePage title="Alteração Dados Cliente" Component={CustomersEdit} />
@@ -33,11 +36,11 @@ const App = () => {
               <TemplatePage title="Lista de Clientes" Component={CustomersList} />
             </Route>
             <Route path="/">
-            <TemplatePage title="Home" Component={Home} />
+              <TemplatePage title="Home" Component={Home} />
             </Route>
           </TemplateDefault>
         </Switch>
-    </Router>
+      </Router>
   )
 }
 
